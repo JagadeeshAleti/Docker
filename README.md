@@ -11,5 +11,9 @@
   3. After step 2, check it is MongoDB is running correctly or not. Open Mongodb compass and connect to the 
      respective database uri. In my case, it is `mongodb://localhost:27017`
 
-## To build Docker image
-  docker run -it -p 3456:3456 -e DATABASE_URI=mongodb://host.docker.internal:27018 -e PORT=3456 aws-user-app
+## Start main application
+  1. Build an image for the docker file
+     ### docker build -t aws-user-app .
+
+  2. create a container for the image
+     ### docker run -it -p 3456:3456 -e DATABASE_URI=mongodb://host.docker.internal:27018 -e PORT=3456 aws-user-app
