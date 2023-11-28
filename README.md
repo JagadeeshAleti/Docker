@@ -1,7 +1,7 @@
 # Configuration to start the application
 ## Run MongoDB in the docker container
   1. First get the MongoDB image from the docker registry.
-  ### docker pull mongo
+      ### docker pull mongo
 
   2. Create a container to start the MongoDB
       ### docker run -d -p 27018:27017 --name Mongodb mongo
